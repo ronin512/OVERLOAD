@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    public int Sum(int n1, int n2)
+    {
+        Console.WriteLine("Sum with two parameters");
+        return n1 + n2;
+    }
+
+    public int Sum(int n1, int n2, int n3)
+    {
+        Console.WriteLine("Sum with three parameters");
+        return n1 + n2 + n3;
+    }
+
+    public string Sum(int n1, string s1)
+    {
+        Console.WriteLine("Sum with two parameters");
+        return n1.ToString() + s1;  //SUPER SOS
+    }
+
+    static void Main(string[] args)
+    {
+        Program p = new Program();
+        Console.WriteLine(p.Sum(2, 6));
+        Console.WriteLine(p.Sum(3, 7, 9));
+        Console.WriteLine(p.Sum(4, "Hello")); // Προσθέσαμε συγκεκριμένες τιμές για τις παραμέτρους n1 και s1.
+    }
+}
